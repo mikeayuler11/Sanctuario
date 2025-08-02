@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanctuario de Santa Rosa de Lima Memorial Park - Comfort & Elegance in Afterlife. Premium memorial lots in Bacacay, Albay.">
+    <meta name="keywords" content="memorial park, cemetery, burial lots, mausoleum, Bacacay, Albay, Santa Rosa de Lima">
+    <title>Sanctuario de Santa Rosa de Lima Memorial Park | Comfort & Elegance in Afterlife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-dove"></i>
+                <span>Sanctuario de Santa Rosa de Lima</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#lots" class="nav-link">Memorial Lots</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="auth-buttons">
+                    <button class="btn-login" onclick="openModal('loginModal')">Login</button>
+                    <button class="btn-signup" onclick="openModal('signupModal')">Sign Up</button>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Sanctuario de Santa Rosa de Lima Memorial Park</h1>
+            <p class="hero-subtitle">COMFORT & ELEGANCE IN AFTERLIFE</p>
+            <p class="hero-description">A peaceful sanctuary where memories live forever, offering dignified resting places with compassionate care.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('lots')">Explore Memorial Lots</button>
+                <button class="btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Compassionate Care</h3>
+                    <p>Professional and caring service for your loved ones</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Peaceful Environment</h3>
+                    <p>Serene and tranquil grounds for eternal rest</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Trusted Legacy</h3>
+                    <p>Operating under La Rosario Villa and Development Corp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memorial Lots Section -->
+    <section id="lots" class="lots-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Memorial Lots & Services</h2>
+                <p>Choose from our variety of memorial options designed to honor your loved ones</p>
+            </div>
+            
+            <div class="lots-grid">
+                <!-- Lawn Lots -->
+                <div class="lot-card">
+                    <div class="lot-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Lawn Lots</h3>
+                    <div class="lot-details">
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>2.38 Square Meters</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>Underground Interment</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-square"></i>
+                            <span>Flat on Ground Tombstone</span>
+                        </div>
+                        <div class="capacity">
+                            <h4>Capacity:</h4>
+                            <p>1 fresh body & 4 set of bones</p>
+                        </div>
+                    </div>
+                    <button class="btn-inquire">Inquire Now</button>
+                </div>
+
+                <!-- Garden Lots -->
+                <div class="lot-card featured">
+                    <div class="lot-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Garden Lots</h3>
+                    <div class="lot-details">
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>16 Square Meters</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>Underground Interment</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-square"></i>
+                            <span>Flat on Ground Tombstone</span>
+                        </div>
+                        <div class="capacity">
+                            <h4>Capacity:</h4>
+                            <p>2 fresh bodies & 8 set of bones</p>
+                        </div>
+                    </div>
+                    <button class="btn-inquire">Inquire Now</button>
+                </div>
+
+                <!-- Mini Mausoleum -->
+                <div class="lot-card">
+                    <div class="lot-image">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Mini Mausoleum Lot</h3>
+                    <div class="lot-details">
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>21 Square Meters</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-hammer"></i>
+                            <span>Underground Structure</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Uniform Exterior Design</span>
+                        </div>
+                        <div class="capacity">
+                            <h4>Capacity:</h4>
+                            <p>4 fresh bodies & 8 set of bones</p>
+                        </div>
+                    </div>
+                    <button class="btn-inquire">Inquire Now</button>
+                </div>
+
+                <!-- Mausoleum Lot -->
+                <div class="lot-card premium">
+                    <div class="lot-image">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <h3>Mausoleum Lot</h3>
+                    <div class="lot-details">
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>30 Square Meters</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Optional Interment</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Uniform Exterior Design</span>
+                        </div>
+                        <div class="capacity">
+                            <h4>Capacity:</h4>
+                            <p>2 fresh bodies & 10 set of bones</p>
+                        </div>
+                    </div>
+                    <button class="btn-inquire">Inquire Now</button>
+                </div>
+
+                <!-- Rental Apartment Niche -->
+                <div class="lot-card">
+                    <div class="lot-image">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Rental Apartment Niche</h3>
+                    <div class="lot-details">
+                        <div class="detail-item">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>0.664 Square Meters</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Above Ground Interment</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-credit-card"></i>
+                            <span>One Time Payment</span>
+                        </div>
+                        <div class="capacity">
+                            <h4>Capacity:</h4>
+                            <p>1 fresh body</p>
+                        </div>
+                    </div>
+                    <button class="btn-inquire">Inquire Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Sanctuario De Santa Rosa De Lima Memorial Park operates under La Rosario Villa and Development Corp., one of the Rising Real Estate Companies of the province. Sanctuario offers the municipality of Bacacay prime memorial lots and resting places.</p>
+                    
+                    <div class="mission-vision">
+                        <div class="mission">
+                            <h3><i class="fas fa-heart"></i> Our Mission</h3>
+                            <p>Sanctuario De Santa Rosa De Lima Memorial Park hopes to provide a solitude wherein hopes, healing and peace could be provided for the ones left behind by guaranteeing a tranquil resting place for their departed loved ones that would be regularly attended with care.</p>
+                        </div>
+                        
+                        <div class="vision">
+                            <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                            <p>Sanctuario De Santa Rosa De Lima Memorial Park aspires to be the municipality of Bacacay's most prestigious memorial park with spacious, peaceful and expansive space that would cater all the needs of the people, client or loved ones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We're here to help you during this difficult time</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>2nd Floor, Rose Bldg, Brgy. 7 Magsaysay Ave.<br>Bacacay, Albay</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Numbers</h4>
+                            <p>09454785649<br>09684412511</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lrdvc.sanctuario22@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-facebook"></i>
+                        <div>
+                            <h4>Facebook Page</h4>
+                            <p>Sanctuario de Santa Rosa de Lima</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday to Saturday<br>10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="">Select Lot Type Interest</option>
+                                <option value="lawn">Lawn Lots</option>
+                                <option value="garden">Garden Lots</option>
+                                <option value="mini-mausoleum">Mini Mausoleum Lot</option>
+                                <option value="mausoleum">Mausoleum Lot</option>
+                                <option value="rental">Rental Apartment Niche</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-dove"></i>
+                    <span>Sanctuario de Santa Rosa de Lima</span>
+                </div>
+                <p>&copy; 2025 Sanctuario de Santa Rosa de Lima Memorial Park. All rights reserved.</p>
+                <p>Operating under La Rosario Villa and Development Corp.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" onclick="switchModal('loginModal', 'signupModal')">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Create Account</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="btn-primary">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#" onclick="switchModal('signupModal', 'loginModal')">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
