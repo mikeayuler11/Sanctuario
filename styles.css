@@ -206,8 +206,7 @@ p {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23e8f5e8;stop-opacity:1" /><stop offset="50%" style="stop-color:%23f0f8f0;stop-opacity:1" /><stop offset="100%" style="stop-color:%23e0f2e0;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23bg)" width="1200" height="800"/><g fill="%23d0e8d0" opacity="0.3"><circle cx="200" cy="200" r="50"/><circle cx="800" cy="150" r="30"/><circle cx="1000" cy="300" r="40"/><circle cx="300" cy="500" r="25"/><circle cx="700" cy="600" r="35"/></g></svg>');
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 50%, #e0f2e0 100%);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -229,7 +228,7 @@ p {
 .hero-content {
     position: relative;
     z-index: 2;
-    color: white;
+    color: #2c3e50;
     max-width: 800px;
     padding: 0 20px;
 }
@@ -237,7 +236,7 @@ p {
 .hero-title {
     font-size: 4rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     animation: fadeInUp 1s ease-out;
 }
 
@@ -246,8 +245,8 @@ p {
     font-weight: 600;
     letter-spacing: 3px;
     margin-bottom: 1.5rem;
-    color: #f39c12;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #8e44ad;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
@@ -271,7 +270,7 @@ p {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: #6b73ff;
     font-size: 1.5rem;
     animation: bounce 2s infinite;
 }
@@ -325,6 +324,22 @@ section {
 /* About Section */
 .about {
     background: #f8f9fa;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-description {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-description p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-style: italic;
 }
 
 .about-grid {
