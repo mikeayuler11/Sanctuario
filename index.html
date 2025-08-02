@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanctuario de Santa Rosa de Lima Memorial Park</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-cross"></i>
+                    <span>SSRLMP</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#memorial">Memorial</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="btn btn-secondary" onclick="openLoginModal()">Login</button>
+                    <button class="btn btn-primary" onclick="openSignupModal()">Create Account</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Sanctuario de Santa Rosa de Lima Memorial Park</h1>
+            <p class="hero-subtitle">COMFORT & ELEGANCE IN AFTERLIFE</p>
+            <p class="hero-description">A sacred place of eternal rest where memories live forever in tranquil beauty and spiritual peace.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-large">Explore Our Services</button>
+                <button class="btn btn-secondary btn-large">Virtual Tour</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>A Sacred Place of Rest</h2>
+                <p>For over decades, we have provided families with a place of comfort, beauty, and eternal peace.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Compassionate Care</h3>
+                    <p>Our dedicated staff provides gentle guidance and support during your time of need with understanding and respect.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Peaceful Environment</h3>
+                    <p>Beautifully landscaped grounds offer a serene setting for reflection, remembrance, and spiritual comfort.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-church"></i>
+                    <h3>Sacred Heritage</h3>
+                    <p>Named after Santa Rosa de Lima, our memorial park honors the patron saint with dignity and reverence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive memorial services designed with care and elegance</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-monument"></i>
+                    </div>
+                    <h3>Burial Services</h3>
+                    <p>Traditional and contemporary burial options in our beautifully maintained grounds with personalized memorials.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Cremation Services</h3>
+                    <p>Dignified cremation services with options for columbarium niches and memorial gardens.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3>Memorial Services</h3>
+                    <p>Customized memorial services that celebrate life and provide comfort to families and friends.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Garden Memorials</h3>
+                    <p>Beautiful garden settings for those who prefer a natural, peaceful environment for eternal rest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memorial Section -->
+    <section id="memorial" class="memorial">
+        <div class="container">
+            <div class="memorial-content">
+                <div class="memorial-text">
+                    <h2>Honoring Lives, Preserving Memories</h2>
+                    <p>Every life tells a unique story. Our memorial services are designed to honor these stories with dignity, creating lasting tributes that celebrate the lives of those we hold dear.</p>
+                    <p>From traditional monuments to modern memorial gardens, we offer various options to create a meaningful and beautiful final resting place.</p>
+                    <button class="btn btn-primary">Learn More About Our Memorials</button>
+                </div>
+                <div class="memorial-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-cross memorial-cross"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We're here to help you during this important time</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Memorial Drive<br>Sacred Valley, State 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@sanctuariomemorial.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Daily: 8:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sanctuario de Santa Rosa de Lima Memorial Park</h4>
+                    <p>Comfort & Elegance in Afterlife</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#memorial">Memorials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Burial Services</a></li>
+                        <li><a href="#">Cremation</a></li>
+                        <li><a href="#">Memorial Gardens</a></li>
+                        <li><a href="#">Pre-Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Grief Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Emergency Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sanctuario de Santa Rosa de Lima Memorial Park. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome Back</h2>
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+            </div>
+            <form class="auth-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                <p class="auth-switch">Don't have an account? <a href="#" onclick="switchToSignup()">Create one here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Account</h2>
+                <span class="close" onclick="closeSignupModal()">&times;</span>
+            </div>
+            <form class="auth-form" onsubmit="handleSignup(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="signupFirstName">First Name</label>
+                        <input type="text" id="signupFirstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupLastName">Last Name</label>
+                        <input type="text" id="signupLastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone">Phone Number</label>
+                    <input type="tel" id="signupPhone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="password" required minlength="8">
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" id="signupConfirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#" onclick="switchToLogin()">Sign in here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
